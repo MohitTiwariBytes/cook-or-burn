@@ -63,6 +63,47 @@
 .notice2{
     display: none;
 }
+.game-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+}
+
+.inputs input{
+    padding: 20px 0px;
+    width: 196px;
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-family: "CSGreg";
+}
+
+.inputs span{
+    font-size: 60px;
+    font-family: "Crimson Text";
+}
+
+#second-food{
+    padding: 20px;
+}
+
+.inputs input:focus{
+    outline: none;
+}
+.inputs input:active{
+    outline: none;
+}
 
 @media (max-width: 998px) {
     .gifs-overlay img:nth-child(1) {

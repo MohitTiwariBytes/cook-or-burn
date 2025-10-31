@@ -24,9 +24,9 @@ export default function Game() {
               <span>Enter your favorite food combo!</span>
             </div>
             <div className="inputs">
-              <input type="text" />
+              <input id="first-food" type="text" />
               <span>+</span>
-              <input type="text" />
+              <input id="second-food" type="text" />
             </div>
             <div className="submit-button">
               <button style={{ width: "427px" }} id="btn">
