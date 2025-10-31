@@ -67,6 +67,8 @@
     font-family: "CSGreg";
     font-size: 120px;
     color: #765B00;
+    position: relative;
+    z-index: 400;
 }
 
 .sub-txt span{
@@ -76,6 +78,9 @@
     letter-spacing: 0%;
     text-align: center;
     display: inline-block;
+    position: relative;
+    z-index: 300;
+    max-width: 500px;
 }
 
 .logo-txt{
@@ -87,6 +92,7 @@
     right: 20px;
     bottom: -5px;
     transition: all 0.2s ease;
+    z-index: 401;
 }
 
 .btn-fire img{

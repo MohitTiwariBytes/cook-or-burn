@@ -4,10 +4,115 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .gamePage{
     width: var(100% - 40px);
     height: 100%;
+    overflow: hidden;
 }
 
+.top-nav{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.top-nav h1{
+    font-family: "CSGreg";
+    font-size: 50px;
+    color: #765B00;
+}
+.gifs-overlay {
+    overflow: hidden;
+}
+
+.gifs-overlay img {
+    position: absolute;
+    height: 400px;
+    overflow: hidden;
+}
+
+.gifs-overlay img:nth-child(1) {
+    top: -50px;
+    left: 20px;
+    width: 267.22px;
+    height: 289.8px;
+    transform: rotate(-149.75deg);
+}
+
+.gifs-overlay img:nth-child(2) {
+    top: -20px;
+    right: -30px;
+    width: 367px;
+    height: 398px;
+    transform: rotate(-94.69deg);
+}
+
+.gifs-overlay img:nth-child(3) {
+    bottom: -50px;
+    left: -50px;
+    width: 367px;
+    height: 398px;
+    transform: rotate(33.25deg);
+}
+
+.notice2{
+    display: none;
+}
+
+@media (max-width: 998px) {
+    .gifs-overlay img:nth-child(1) {
+            top: -20px;
+            left: 20px;
+            width: 167.22px;
+            height: 189.8px;
+            transform: rotate(-159.75deg);
+        }
+    
+        .gifs-overlay img:nth-child(2) {
+            top: -20px;
+            right: 0px;
+            width: 167px;
+            height: 198px;
+            transform: rotate(-94.69deg);
+        }
+    
+        .gifs-overlay img:nth-child(3) {
+            bottom: -20px;
+            left: 10px;
+            width: 167px;
+            height: 198px;
+            transform: rotate(23.25deg);
+        }
+}
+
+@media (max-width: 660px) {
+    body {
+            overflow: hidden;
+        }
+    
+        .notice2 {
+            position: fixed;
+            z-index: 200000000;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #FFCD45;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .notice2 h1 {
+            width: 90%;
+            text-align: center;
+            font-family: "Crimson Text";
+            line-height: 90%;
+            color: #765B00;
+        }
+}
